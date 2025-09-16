@@ -10,23 +10,6 @@ from datetime import datetime
 # ================================
 model = joblib.load("suicide_risk_model.pkl")
 
-import psycopg2
-
-conn = psycopg2.connect(
-    host="db.ybcwuzydoxthcysbskrc.supabase.co",
-    port="5432",
-    database="postgres",
-    user="postgres",
-    password="Yipyoongeng_1219"
-)
-
-cur = conn.cursor()
-cur.execute("SELECT version();")
-print(cur.fetchone())
-
-cur.close()
-conn.close()
-
 # ================================
 # Custom Styling
 # ================================
