@@ -9,6 +9,7 @@ from datetime import datetime
 # ================================
 model = joblib.load("suicide_risk_model.pkl")
 
+
 # ================================
 # Custom Styling
 # ================================
